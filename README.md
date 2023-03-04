@@ -1,5 +1,5 @@
 <h4 align="center">
-📝 Cooperate Here 📝
+📝 Focus Time 📝
 </h4>
 <!-- <div align="center">
 
@@ -62,7 +62,7 @@ The following dependencies were used in this project:
 
 ## :clapper: Show Off ##
 
-<img src="public/coopehere.gif" alt="show off application" >
+<img src="public/focustime.gif" alt="show off application" >
 
 ## :checkered_flag: Starting ##
 
@@ -70,7 +70,7 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 
 ```bash
 # Clone this project
-$ git clone git@github.com:KayoRenato/CooperateHere.git <Project-Name> 
+$ git clone git@github.com:KayoRenato/FocusTime.git <Project-Name> 
 
 
 # Access
@@ -91,9 +91,9 @@ This project is under license from MIT. For more details, see the [LICENSE](Lice
 
 ## :gem: Deploy & Repository ##
 
-<a href="https://coopehere.kayoio.com/" target="_blank">:rocket: Link to solution deployed</a>
+<a href="https://focustime.kayoio.com/" target="_blank">:rocket: Link to solution deployed</a>
 
-<a href="https://github.com/KayoRenato/CooperateHere" target="_blank">:octopus: Link to repository</a>
+<a href="https://github.com/KayoRenato/FocusTime" target="_blank">:octopus: Link to repository</a>
 
 <br>
 
