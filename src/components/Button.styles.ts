@@ -18,12 +18,17 @@ width: 6rem;
 height: 3rem;
 
 margin-right: .5rem;
+border: none;
 
-${props => {
+border-radius: 4px;
+
+background-color: ${props => props.theme.primary};
+color: ${props => props.theme.white};
+
+/* ${props => {
         return css`
             background-color: ${buttonVariants[props.variant]};
         `
-    }}
+    }} */
 
 `
-
