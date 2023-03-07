@@ -2,7 +2,7 @@
 import { ButtonContainer, VariantBtn } from './Button.styles'
 
 interface ButtonProps {
-    variant?: VariantBtn
+  variant?: VariantBtn
 }
 
 // export function Button({ variant = 'primary' }: ButtonProps) {
@@ -10,5 +10,5 @@ interface ButtonProps {
 // }
 
 export function Button({ variant = 'primary' }: ButtonProps) {
-    return <ButtonContainer variant={variant}>Enviar</ButtonContainer>
+  return <ButtonContainer variant={variant}>Enviar</ButtonContainer>
 }
