@@ -11,11 +11,11 @@ export function Header() {
       </h1>
 
       <nav>
-        <NavLink to="/" title="timer">
+        <NavLink to="/" title="Timer">
           <Timer size={16} weight="light" />
           Timer
         </NavLink>
-        <NavLink to="/history" title="history">
+        <NavLink to="/history" title="History">
           <ClockCounterClockwise size={16} weight="light" />
           History
         </NavLink>

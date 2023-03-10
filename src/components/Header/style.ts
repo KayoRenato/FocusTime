@@ -40,14 +40,12 @@ export const HeaderContainer = styled.header`
     color: ${({ theme }) => theme.white};
 
     &:hover {
-      color: ${({ theme }) => theme['green-300']};
       border-bottom: 3px solid ${({ theme }) => theme['green-500']};
       cursor: pointer;
     }
 
     &.active {
-      color: ${({ theme }) => theme['green-500']};
-      opacity: 0.8;
+      color: ${({ theme }) => theme['green-300']};
     }
   }
 `
