@@ -22,7 +22,7 @@ html, body, #root{
     height: 100%;
 }
 
-body, input, textarea, buttun {
+body, input, textarea, button {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 1rem;

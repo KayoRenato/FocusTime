@@ -9,6 +9,8 @@ export const HeaderContainer = styled.header`
 
   h1 {
     display: flex;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
 
     span {
       margin-left: 0.5rem;
