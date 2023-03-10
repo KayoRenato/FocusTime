@@ -23,9 +23,9 @@ export function Home() {
           />
 
           <datalist id="task-suggestion">
-            <option value="task 1">Task 1</option>
-            <option value="task 2">Task 2</option>
-            <option value="task 3">Task 3</option>
+            <option>Task 1</option>
+            <option>Task 2</option>
+            <option>Task 3</option>
           </datalist>
 
           <label htmlFor="minutesAmount">for</label>
