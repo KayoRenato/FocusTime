@@ -18,16 +18,18 @@ export const HomeContainer = styled.main`
 
 export const FormContainer = styled.div`
   width: 100%;
+
   display: flex;
+  flex-wrap: wrap;
+
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
 
   color: ${(props) => props.theme['gray-100']};
 
   font-size: 1.125rem;
   font-weight: bold;
-  flex-wrap: wrap;
 `
 
 const BaseInput = styled.input`
