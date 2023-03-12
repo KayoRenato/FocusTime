@@ -43,7 +43,7 @@ export const HistoryList = styled.div`
     td {
       background: ${(props) => props.theme['gray-700']};
       border-top: 2px solid ${(props) => props.theme['gray-800']};
-      padding: 1rem;
+      padding: 1.25rem;
       font-size: 0.875rem;
       line-height: 1.6;
 
@@ -51,5 +51,36 @@ export const HistoryList = styled.div`
         width: 50%;
       }
     }
+
+    tbody {
+      tr {
+        &:last-child {
+          td:first-child {
+            border-bottom-left-radius: 8px;
+          }
+
+          td:last-child {
+            border-bottom-right-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+`
+interface StatusProps {
+  statusColor: 'yellow' | 'green' | 'red'
+}
+
+export const Status = styled.span<StatusProps>`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  &::before {
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: ${(props) => props.theme[`${props.statusColor}-500`]};
   }
 `
