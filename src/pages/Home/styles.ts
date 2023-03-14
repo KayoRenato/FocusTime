@@ -38,7 +38,7 @@ const BaseInput = styled.input`
   padding: 0.5rem 1rem;
 
   border: none;
-  border-bottom: 2px solid ${(props) => props.theme['green-700']};
+  border-bottom: 2px solid ${(props) => props.theme['primary-700']};
 
   font-size: inherit;
   font-weight: inherit;
@@ -46,7 +46,7 @@ const BaseInput = styled.input`
 
   &:focus {
     background: ${(props) => props.theme['gray-700']};
-    border: 1px solid ${(props) => props.theme['green-700']};
+    border: 1px solid ${(props) => props.theme['primary-700']};
     box-shadow: none;
   }
 
@@ -86,7 +86,7 @@ export const CountdownContainer = styled.div`
 
 export const Separator = styled.div`
   padding: 2rem 0;
-  color: ${(props) => props.theme['green-500']};
+  color: ${(props) => props.theme['primary-500']};
 
   width: 4ren;
   overflow: hidden;
@@ -105,7 +105,7 @@ export const StartCountdownButton = styled.button`
   justify-content: center;
   gap: 1rem;
 
-  background: ${(props) => props.theme['green-300']};
+  background: ${(props) => props.theme['primary-300']};
   color: ${(props) => props.theme.white};
 
   font-size: 1.125rem;
@@ -121,10 +121,10 @@ export const StartCountdownButton = styled.button`
   }
 
   &:not(:disabled):hover {
-    background: ${(props) => props.theme['green-500']};
+    background: ${(props) => props.theme['primary-500']};
   }
 
   &:not(:disabled):active {
-    background: ${(props) => props.theme['green-700']};
+    background: ${(props) => props.theme['primary-700']};
   }
 `

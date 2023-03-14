@@ -14,12 +14,12 @@ export const HeaderContainer = styled.header`
 
     span {
       margin-left: 0.5rem;
-      color: ${({ theme }) => theme['green-500']};
+      color: ${({ theme }) => theme['primary-500']};
     }
   }
 
   Target {
-    color: ${(props) => props.theme['green-500']};
+    color: ${(props) => props.theme['primary-500']};
   }
 
   nav {
@@ -42,12 +42,12 @@ export const HeaderContainer = styled.header`
     color: ${({ theme }) => theme.white};
 
     &:hover {
-      border-bottom: 3px solid ${({ theme }) => theme['green-500']};
+      border-bottom: 3px solid ${({ theme }) => theme['primary-500']};
       cursor: pointer;
     }
 
     &.active {
-      color: ${({ theme }) => theme['green-300']};
+      color: ${({ theme }) => theme['primary-300']};
     }
   }
 `
