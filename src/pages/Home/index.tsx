@@ -1,4 +1,4 @@
-import { Play, Pause } from 'phosphor-react'
+import { Play, Stop } from 'phosphor-react'
 import { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { differenceInSeconds } from 'date-fns'
@@ -7,7 +7,7 @@ import {
   FormContainer,
   HomeContainer,
   MinutesInput,
-  PauseCountdownButton,
+  StopCountdownButton,
   Separator,
   StartCountdownButton,
   TaskInput,
@@ -18,7 +18,7 @@ interface Cycle {
   task: string
   minutesAmount: number
   startDate: Date
-  pauseDate?: Date
+  stopDate?: Date
   finishedDate?: Date
 }
 
@@ -51,7 +51,8 @@ export function Home() {
           new Date(),
           activeCycle.startDate,
         )
-        if (interval >= totalSeconds) {
+
+        if (secondsPassed >= totalSeconds) {
           setCycles((currentCycles) =>
             currentCycles.map((cycle) => {
               return cycle.id === activeCycleID
@@ -59,6 +60,9 @@ export function Home() {
                 : cycle
             }),
           )
+
+          setAmountSecondsPassed(totalSeconds)
+          setActiveCycleID(null)
           clearInterval(interval)
         } else {
           setAmountSecondsPassed(secondsPassed)
@@ -88,11 +92,11 @@ export function Home() {
     reset()
   }
 
-  function handlePauseCycle() {
+  function handleStopCycle() {
     setCycles((currentCycles) =>
       currentCycles.map((cycle) => {
         return cycle.id === activeCycleID
-          ? { ...cycle, pauseDate: new Date() }
+          ? { ...cycle, startDate: new Date() }
           : cycle
       }),
     )
@@ -167,10 +171,10 @@ export function Home() {
         </CountdownContainer>
 
         {activeCycle ? (
-          <PauseCountdownButton onClick={handlePauseCycle} type="button">
-            <Pause size={24} />
-            Pause
-          </PauseCountdownButton>
+          <StopCountdownButton onClick={handleStopCycle} type="button">
+            <Stop size={24} />
+            Stop
+          </StopCountdownButton>
         ) : (
           <StartCountdownButton disabled={!hasTask} type="submit">
             <Play size={24} />
