@@ -6,7 +6,7 @@ export function Header() {
   return (
     <HeaderContainer>
       <h1>
-        <Target size={32} />
+        <Target weight="duotone" size={32} />
         <span>Focus</span> Time
       </h1>
 
