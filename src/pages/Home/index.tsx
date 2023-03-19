@@ -2,15 +2,12 @@ import { Play, Stop } from 'phosphor-react'
 import { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { differenceInSeconds } from 'date-fns'
+import { CountDown } from './components/Countdown'
+import { NewCycleForm } from './components/NewCycleForm'
 import {
-  CountdownContainer,
-  FormContainer,
   HomeContainer,
-  MinutesInput,
   StopCountdownButton,
-  Separator,
   StartCountdownButton,
-  TaskInput,
 } from './styles'
 
 interface Cycle {
@@ -124,52 +121,8 @@ export function Home() {
   return (
     <HomeContainer>
       <form onSubmit={handleSubmit(handleCreateNewCycle)} action="">
-        {activeCycle ? (
-          <></>
-        ) : (
-          <FormContainer>
-            <label htmlFor="task"> I'll do ... </label>
-            <TaskInput
-              id="task"
-              type="text"
-              placeholder="something"
-              disabled={!!activeCycle}
-              list="task-suggestion"
-              {...register('task', { required: true })}
-            />
-
-            <datalist id="task-suggestion">
-              <option>Task 1</option>
-              <option>Task 2</option>
-              <option>Task 3</option>
-            </datalist>
-
-            <label htmlFor="minutesAmount">for</label>
-            <MinutesInput
-              id="minutesAmount"
-              type="number"
-              placeholder="00"
-              step={5}
-              min={1}
-              max={60}
-              {...register('minutesAmount', {
-                required: true,
-                valueAsNumber: true,
-                disabled: !hasTask,
-              })}
-            />
-            <span>minutes</span>
-          </FormContainer>
-        )}
-
-        <CountdownContainer>
-          <span>{minutes[0]}</span>
-          <span>{minutes[1]}</span>
-          <Separator>:</Separator>
-          <span>{seconds[0]}</span>
-          <span>{seconds[1]}</span>
-        </CountdownContainer>
-
+        {activeCycle ? <></> : <NewCycleForm />}
+        <CountDown />
         {activeCycle ? (
           <StopCountdownButton onClick={handleStopCycle} type="button">
             <Stop size={24} />
