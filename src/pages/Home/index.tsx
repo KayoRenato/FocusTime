@@ -1,6 +1,6 @@
 import { Play, Stop } from 'phosphor-react'
 import { createContext, useState } from 'react'
-import { useForm } from 'react-hook-form'
+// import { useForm } from 'react-hook-form'
 import { CountDown } from './components/Countdown'
 import { NewCycleForm } from './components/NewCycleForm'
 import {
@@ -18,15 +18,15 @@ interface Cycle {
   finishedDate?: Date
 }
 
-interface NewCycleFormProps {
-  task: string
-  minutesAmount: number
-}
+// interface NewCycleFormProps {
+//   task: string
+//   minutesAmount: number
+// }
 
 interface CycleContextType {
   activeCycle: Cycle | undefined
   activeCycleId: string | null
-  markCycleAsFinished: () => void
+  markCurrentCycleAsFinished: () => void
 }
 
 export const CyclesContext = createContext({} as CycleContextType)
@@ -37,16 +37,16 @@ export function Home() {
 
   const activeCycle = cycles.find((cycle) => cycle.id === activeCycleId)
 
-  const { handleSubmit, reset, watch } = useForm<NewCycleFormProps>({
-    defaultValues: {
-      task: '',
-      minutesAmount: 5,
-    },
-  })
+  // const { handleSubmit, reset, watch } = useForm<NewCycleFormProps>({
+  //   defaultValues: {
+  //     task: '',
+  //     minutesAmount: 5,
+  //   },
+  // })
 
-  const hasTask = watch('task')
+  // const hasTask = watch('task')
 
-  function markCycleAsFinished() {
+  function markCurrentCycleAsFinished() {
     setCycles((currentCycles) =>
       currentCycles.map((cycle) => {
         return cycle.id === activeCycleId
@@ -56,41 +56,41 @@ export function Home() {
     )
   }
 
-  function handleCreateNewCycle(data: any) {
-    const id = String(new Date().getTime())
+  // function handleCreateNewCycle(data: any) {
+  //   const id = String(new Date().getTime())
 
-    const newCycle: Cycle = {
-      id,
-      task: data.task,
-      minutesAmount: data.minutesAmount,
-      startDate: new Date(),
-    }
+  //   const newCycle: Cycle = {
+  //     id,
+  //     task: data.task,
+  //     minutesAmount: data.minutesAmount,
+  //     startDate: new Date(),
+  //   }
 
-    setCycles((currentCycles) => [...currentCycles, newCycle])
-    setActiveCycleId(id)
-    setAmountSecondsPassed(0)
+  //   setCycles((currentCycles) => [...currentCycles, newCycle])
+  //   setActiveCycleId(id)
+  //   setAmountSecondsPassed(0)
 
-    reset()
-  }
+  //   reset()
+  // }
 
   function handleStopCycle() {
     setCycles((currentCycles) =>
       currentCycles.map((cycle) => {
-        return cycle.id === activeCycleID
+        return cycle.id === activeCycleId
           ? { ...cycle, startDate: new Date() }
           : cycle
       }),
     )
-    setActiveCycleID(null)
+    setActiveCycleId(null)
   }
 
   return (
     <HomeContainer>
-      <form onSubmit={handleSubmit(handleCreateNewCycle)} action="">
+      <form /* onSubmit={handleSubmit(handleCreateNewCycle)} */ action="">
         <CyclesContext.Provider
-          value={{ activeCycle, activeCycleId, markCycleAsFinished }}
+          value={{ activeCycle, activeCycleId, markCurrentCycleAsFinished }}
         >
-          {activeCycle ? <></> : <NewCycleForm />}
+          {/* {activeCycle ? <></> : <NewCycleForm />} */}
           <CountDown />
         </CyclesContext.Provider>
 
@@ -100,7 +100,7 @@ export function Home() {
             Stop
           </StopCountdownButton>
         ) : (
-          <StartCountdownButton disabled={!hasTask} type="submit">
+          <StartCountdownButton /* disabled={!hasTask} */ type="submit">
             <Play size={24} />
             Start
           </StartCountdownButton>
