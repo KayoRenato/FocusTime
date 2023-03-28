@@ -58,7 +58,6 @@ The following dependencies were used in this project:
 - Phosphor-react
 - Typescript
 - Vitejs
-- UUID
 
 ## :clapper: Show Off ##
 
