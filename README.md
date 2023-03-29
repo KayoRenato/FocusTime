@@ -28,9 +28,7 @@
 
 ## :dart: About ##
 
-I created this project to practice fundamental concepts of Hooks like useContext,
- useState, useEffect, useForm, and Date Formatting in a cooperation application
-  through comments.
+FocusTime is a time management app to help you be more productive. It allows you to set timers to focus on a specific task for a defined period of time, followed by a break interval. This project was developed using React JS.
 
 ## :sparkles: Features ##
 
