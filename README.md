@@ -35,13 +35,13 @@ The application aims to solve the problem of lack of focus and productivity duri
 This project was created to practice fundamental concepts of React Hooks like useContext, useState, useEffect, useForm, useReducer, and Date Formatting. The main idea is to provide a simple and effective tool while improving React skills and learning how to use Hooks to manage state and form data.
 
 ## :sparkles: Features ##
-:ballot_box_with_check: Customizable Timer: allows the user to set the timer duration in 5-minute intervals.
-:ballot_box_with_check: Timer States: presents three timer states: completed, in progress, and suspended.
-:ballot_box_with_check: Task Listing: displays a list of completed, suspended, or in-progress tasks.
-:ballot_box_with_check: Responsive Design: the interface adapts to different screen sizes.
-:ballot_box_with_check: Integration with React Hooks: the application uses fundamental concepts of React Hooks such as useContext, useState, useEffect, useForm, and useReducer.
-:ballot_box_with_check: Integration with third-party libraries: the application uses various third-party libraries such as react-router-dom, styled-components, date-fns, phosphor-react, and react-hook-form.
-:black_square_button:  Sound notifications: Adding sound notifications to the timer could be a helpful feature for users who want an audio cue when their timer is complete. Users could have the option to choose from different notification sounds or upload their own audio file.
+:ballot_box_with_check: Customizable Timer: allows the user to set the timer duration in 5-minute intervals.  
+:ballot_box_with_check: Timer States: presents three timer states: completed, in progress, and suspended.  
+:ballot_box_with_check: Task Listing: displays a list of completed, suspended, or in-progress tasks.  
+:ballot_box_with_check: Responsive Design: the interface adapts to different screen sizes.  
+:ballot_box_with_check: Integration with React Hooks: the application uses fundamental concepts of React Hooks such as useContext, useState, useEffect, useForm, and useReducer.  
+:ballot_box_with_check: Integration with third-party libraries: the application uses various third-party libraries such as react-router-dom, styled-components, date-fns, phosphor-react, and react-hook-form.  
+:black_square_button:  Sound notifications: Adding sound notifications to the timer could be a helpful feature for users who want an audio cue when their timer is complete. Users could have the option to choose from different notification sounds or upload their own audio file.  
 
 
 ## :computer: Technologies & Requirements ##
