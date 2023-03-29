@@ -28,34 +28,39 @@
 
 ## :dart: About ##
 
-FocusTime is a time management app to help you be more productive. It allows you to set timers to focus on a specific task for a defined period of time, followed by a break interval. This project was developed using React JS.
+The Focus Time application is a simple tool for managing your time and increasing your productivity. Using customized intervals of 5 minutes, the application helps you to work in focused sessions and keep track of your progress. It presents only three states: completed, in progress, and suspended.
+
+The application aims to solve the problem of lack of focus and productivity during work sessions. By using a simple and customizable timer, it encourages users to work in focused sessions and take breaks to recharge their energy.
+
+This project was created to practice fundamental concepts of React Hooks like useContext, useState, useEffect, useForm, useReducer, and Date Formatting. The main idea is to provide a simple and effective tool while improving React skills and learning how to use Hooks to manage state and form data.
 
 ## :sparkles: Features ##
+:ballot_box_with_check: Customizable Timer: allows the user to set the timer duration in 5-minute intervals.
+:ballot_box_with_check: Timer States: presents three timer states: completed, in progress, and suspended.
+:ballot_box_with_check: Task Listing: displays a list of completed, suspended, or in-progress tasks.
+:ballot_box_with_check: Responsive Design: the interface adapts to different screen sizes.
+:ballot_box_with_check: Integration with React Hooks: the application uses fundamental concepts of React Hooks such as useContext, useState, useEffect, useForm, and useReducer.
+:ballot_box_with_check: Integration with third-party libraries: the application uses various third-party libraries such as react-router-dom, styled-components, date-fns, phosphor-react, and react-hook-form.
+:black_square_button:  Sound notifications: Adding sound notifications to the timer could be a helpful feature for users who want an audio cue when their timer is complete. Users could have the option to choose from different notification sounds or upload their own audio file.
 
-:ballot_box_with_check: Create comments after realizing Login on uncontrolled 
-Form by exploring useContext, useEffect, useForm, and useState;  
-:ballot_box_with_check: Changes the sidebar based on the commenter's status by 
-exploiting useContext, useEffect, and useState;  
-:ballot_box_with_check: Allow just owners of the comments can delete them by 
-exploring useState;   
-:ballot_box_with_check: Work with relative date format in Posts by exploring 
-date-fns;  
-:ballot_box_with_check: Deploy the application on a server with a custom domain;
-:black_square_button: Persist comment data;  
-:black_square_button: Creating a flow of entries and persistence of Posts.  
 
 ## :computer: Technologies & Requirements ##
 
 The following dependencies were used in this project:
 
-- Next
-- React
-- React-dom
-- React-hook-form
-- Date-fns 
-- Phosphor-react
-- Typescript
-- Vitejs
+- "date-fns": a library that provides various functions for formatting and manipulating dates and times in JavaScript.
+
+- "phosphor-react": a library of SVG icons that can be used in React applications.
+
+- "react": a JavaScript library for building user interfaces.
+
+- "react-dom": a package that provides DOM-specific methods for React.
+
+- "react-hook-form": a library for managing forms in React using hooks.
+
+- "react-router-dom": a library that provides routing functionality for React applications.
+
+- "styled-components": a library that enables developers to write CSS in JavaScript, making it easier to create and manage styled components in React.
 
 ## :clapper: Show Off ##
 
