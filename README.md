@@ -64,7 +64,7 @@ The following dependencies were used in this project:
 
 ## :clapper: Show Off ##
 
-<img src="public/focustime.gif" alt="show off application" >
+<!-- <img src="public/focustime.gif" alt="show off application" > -->
 
 ## :checkered_flag: Starting ##
 
