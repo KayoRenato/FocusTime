@@ -1,3 +1,5 @@
+import { Cycle } from './reducer'
+
 export enum ActionTypes {
   ADD_NEW_CYCLE = 'ADD_NEW_CYCLE',
   STOP_CURRENT_CYCLE = 'STOP_CURRENT_CYCLE',
