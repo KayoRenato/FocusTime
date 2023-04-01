@@ -21,14 +21,6 @@ export function History() {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Task 1</td>
-              <td>60 minutes</td>
-              <td>2 days ago</td>
-              <td>
-                <Status statusColor="green">Completed</Status>
-              </td>
-            </tr>
             {cycles.map((cycle) => {
               return (
                 <tr key={cycle.id}>
