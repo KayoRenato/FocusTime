@@ -30,7 +30,7 @@ export const CountdownContainer = styled.div`
     }
   }
 
-  @media (max-width: 768px) or (max-height: 600px) {
+  @media (max-width: 768px) and (max-height: 500px) {
     max-width: 100%;
     align-items: center;
     justify-content: center;
