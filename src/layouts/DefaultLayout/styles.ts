@@ -16,4 +16,11 @@ export const LayoutContainer = styled.div`
   hr {
     margin: 0.5rem 0;
   }
+
+  @media (max-width: 768px) {
+    font-size: 87.5%;
+    margin: 1rem 1rem;
+    padding: 1.5rem;
+    height: calc(100vh - 1rem);
+  }
 `

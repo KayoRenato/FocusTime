@@ -13,6 +13,10 @@ export const HomeContainer = styled.main`
     flex-direction: column;
     align-items: center;
     gap: 3.5rem;
+
+    @media (max-width: 768px) {
+      gap: 1.5rem;
+    }
   }
 `
 
@@ -39,6 +43,9 @@ export const ButtonContainer = styled.button`
   &:disabled {
     cursor: not-allowed;
     opacity: 0.7;
+  }
+  @media (max-width: 768px) {
+    max-height: 3rem;
   }
 `
 

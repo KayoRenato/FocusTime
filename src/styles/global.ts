@@ -29,5 +29,16 @@ body, input, textarea, button {
     font-size: 1rem;
 }
 
+@media (max-width: 768px) {
+    header {
+        max-height: 3rem;
+        padding: 0;
+    }
+
+    html {
+        font-size: 87.5%;
+    }
+}
+
 
 `
