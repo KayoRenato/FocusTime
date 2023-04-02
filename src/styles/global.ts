@@ -29,7 +29,7 @@ body, input, textarea, button {
     font-size: 1rem;
 }
 
-@media (max-width: 768px) and (max-height: 500px) {
+@media screen and (max-width: 950px){
     header {
         max-height: 3rem;
         padding: 0;

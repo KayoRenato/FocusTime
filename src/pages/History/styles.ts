@@ -13,7 +13,7 @@ export const HistoryContainer = styled.main`
     color: ${(props) => props.theme['gray-100']};
   }
 
-  @media (max-width: 768px) and (max-height: 500px) {
+  @media screen and (max-width: 950px) {
     padding: 1rem 0;
   }
 `
@@ -76,7 +76,7 @@ export const HistoryList = styled.div`
     }
   }
 
-  @media (max-width: 768px) and (max-height: 500px) {
+  @media screen and (max-width: 950px) {
     table {
       max-height: 200px;
 

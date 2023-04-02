@@ -18,7 +18,7 @@ export const LayoutContainer = styled.div`
     margin: 0.5rem 0;
   }
 
-  @media (max-width: 768px) and (max-height: 500px) {
+  @media screen and (max-width: 950px) {
     font-size: 87.5%;
     margin: 1rem 1rem;
     padding: 1.5rem;
