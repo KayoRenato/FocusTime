@@ -15,7 +15,25 @@ export const CountdownContainer = styled.div`
     border-radius: 8px;
   }
 
+  @media (max-width: 400px) {
+    max-width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    line-height: 6rem;
+
+    div {
+      width: 100%;
+      line-height: 1rem;
+      font-size: 4rem;
+    }
+  }
+
   @media (max-width: 768px) {
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
     font-size: 8rem;
     line-height: 6rem;
   }
