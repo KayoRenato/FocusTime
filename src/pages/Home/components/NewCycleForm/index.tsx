@@ -32,6 +32,7 @@ export function NewCycleForm(props: NewCycleFormProps) {
       <label htmlFor="minutesAmount">for</label>
       <MinutesInput
         id="minutesAmount"
+        inputMode="numeric"
         type="number"
         placeholder="00"
         step={5}
