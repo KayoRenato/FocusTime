@@ -15,7 +15,7 @@ export const CountdownContainer = styled.div`
     border-radius: 8px;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 560px) {
     max-width: 100%;
     flex-wrap: wrap;
     align-items: center;
@@ -30,7 +30,7 @@ export const CountdownContainer = styled.div`
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 768px) or (max-height: 600px) {
     max-width: 100%;
     align-items: center;
     justify-content: center;

@@ -8,6 +8,8 @@ export const HomeContainer = styled.main`
   align-items: center;
   justify-content: center;
 
+  margin-top: 1rem;
+
   form {
     display: flex;
     flex-direction: column;
@@ -15,7 +17,7 @@ export const HomeContainer = styled.main`
     gap: 3.5rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 768px) or (max-height: 600px) {
     align-items: initial;
     form {
       gap: 1.5rem;
@@ -47,7 +49,7 @@ export const ButtonContainer = styled.button`
     cursor: not-allowed;
     opacity: 0.7;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 768px) or (max-height: 600px) {
     max-height: 3rem;
   }
 `

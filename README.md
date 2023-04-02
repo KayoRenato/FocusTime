@@ -40,7 +40,7 @@ This project was created to practice fundamental concepts of React Hooks like us
 :ballot_box_with_check: Task Listing: displays a list of completed, suspended, or in-progress tasks.  
 :ballot_box_with_check: Integration with React Hooks: the application uses fundamental concepts of React Hooks such as useContext, useState, useEffect, useForm, and useReducer.  
 :ballot_box_with_check: Integration with third-party libraries: the application uses various third-party libraries such as react-router-dom, styled-components, date-fns, phosphor-react, and react-hook-form.  
-:black_square_button: Responsive Design: the interface adapts to different screen sizes.   
+:ballot_box_with_check: Responsive Design: the interface adapts to different screen sizes.   
 :black_square_button:  Sound notifications: Adding sound notifications to the timer could be a helpful feature for users who want an audio cue when their timer is complete. Users could have the option to choose from different notification sounds or upload their own audio file.  
 
 

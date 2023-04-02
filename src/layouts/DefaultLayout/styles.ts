@@ -2,9 +2,10 @@ import styled from 'styled-components'
 
 export const LayoutContainer = styled.div`
   max-width: 74rem;
-  height: calc(100vh - 10rem);
 
-  margin: 5rem auto;
+  height: fit-content;
+
+  margin: 1rem auto;
   padding: 2.5rem;
 
   background-color: ${(props) => props.theme['gray-800']};
@@ -17,7 +18,7 @@ export const LayoutContainer = styled.div`
     margin: 0.5rem 0;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 768px) or (max-height: 600px) {
     font-size: 87.5%;
     margin: 1rem 1rem;
     padding: 1.5rem;
